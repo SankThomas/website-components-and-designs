@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.showcase {
+  height: 100vh;
+  background: url("./coming-soon.jpeg") no-repeat center/cover;
+}
+
+.showcase .overlay {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(17, 24, 39, 0.9);
+  color: #fff;
+  text-align: center;
+}
+
+.showcase .overlay .fa-invision {
+  font-size: 46px;
+}
+
+.showcase .overlay h1 {
+  font-size: 46px;
+  margin: 10px 10px 20px;
+}
+
+.showcase .overlay p {
+  margin: 0 10px 20px;
+  line-height: 1.6;
+}
+
+.showcase .overlay button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.showcase .overlay button:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.showcase .overlay button i {
+  margin: 0 10px;
+  font-size: 24px;
+}
