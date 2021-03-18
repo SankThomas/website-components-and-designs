@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+button,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.showcase {
+  height: 100vh;
+  background: url("./coming-soon-2.jpeg") no-repeat center/cover;
+}
+
+.showcase .overlay {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.showcase .overlay h1 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  padding-bottom: 30px;
+}
+
+.showcase .overlay h1 span {
+  font-weight: 700;
+  display: block;
+}
+
+.showcase .overlay p.desc {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.showcase .overlay p.desc .fa-dove {
+  font-size: 64px;
+}
+
+.showcase .overlay form p {
+  padding: 10px 0;
+}
+
+.showcase .overlay form input {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px;
+  color: #fff;
+}
+
+.showcase .overlay form input::placeholder {
+  color: #fff;
+}
+
+.showcase .overlay form button {
+  background-color: #fff;
+  color: blue;
+  margin-left: -10px;
+  padding: 10px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.showcase .overlay form button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.showcase .overlay .social p {
+  padding: 10px 0;
+}
+
+.showcase .overlay .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase .overlay .social ul li {
+  margin: 0 10px;
+}
+
+@media (min-width: 1024px) {
+  .showcase .overlay p.desc {
+    font-size: 18px;
+  }
+
+  .showcase .overlay h1 {
+    font-size: 96px;
+  }
+}
