@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Webinar Registration Form</title>
+  </head>
+  <body>
+    <section class="home">
+      <p>March 19, 2021 12:00</p>
+      <h1>The help of Augemented Reality and Holograms.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        eligendi saepe id quaerat atque nihil ipsa, itaque mollitia iusto
+        laboriosam laborum dicta natus consequuntur voluptatem porro, fugit
+        ipsum molestiae ab.
+      </p>
+
+      <form class="form">
+        <div class="names">
+          <div>
+            <label>First name</label>
+            <input type="text" placeholder="Enter your first name" required />
+          </div>
+          <div>
+            <label>Last name</label>
+            <input type="text" placeholder="Enter your last name" required />
+          </div>
+        </div>
+
+        <div class="emails">
+          <div>
+            <label>Business email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div>
+            <label>Title</label>
+            <input type="text" placeholder="What is your job title?" required />
+          </div>
+        </div>
+
+        <div class="company">
+          <div>
+            <label>Company name</label>
+            <input type="text" placeholder="Where do you work?" required />
+          </div>
+          <div class="dropdown">
+            <label>Company size</label>
+            <select value="Select">
+              <option name="web-developer" id="web-developer">
+                Web Developer
+              </option>
+              <option
+                name="full-stack-web-developer"
+                id="full-stack-web-developer"
+              >
+                Full Stack Web Developer
+              </option>
+              <option name="frontend-web-developer" id="frontend-web-developer">
+                Frontend Web Developer
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <div class="message">
+          <label>What are you hoping to learn about?</label>
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="I am hoping to learn about..."
+            required
+          ></textarea>
+        </div>
+        <div class="check">
+          <!-- <input type="checkbox" /> -->
+          <p>I would like to receive emails about future webinars</p>
+        </div>
+        <button type="submit">Register for this event</button>
+      </form>
+    </section>
+  </body>
+</html>
