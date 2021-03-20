@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Domain Site Landing Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <ul>
+        <li><a href="#">Domains</a></li>
+        <li><a href="#">Email & Marketing</a></li>
+        <li><a href="#">Hosting</a></li>
+        <li><a href="#">Blog</a></li>
+        <li class="action">
+          <a href="#">Sign In <i class="fas fa-chevron-down"></i></a>
+        </li>
+      </ul>
+
+      <!-- 
+        - Hidden by default
+        - Click event on "action" class to display:block on menu-grid
+      -->
+      <div class="menu-grid">
+        <div>
+          <h4>Registered Users</h4>
+          <p>
+            Have an account? <br />
+            Sign in now
+          </p>
+          <button class="btn-dark">Sign In</button>
+        </div>
+        <div>
+          <h4>New Customers</h4>
+          <p>Are you new? Create an account to get started.</p>
+          <button class="btn-light">Create Account</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="showcase">
+      <div class="overlay">
+        <h1>Buy your domain today</h1>
+        <p>
+          With 80+ million domains under management, we have more experience
+          than anyone. We'll make sure you find the right domain.
+        </p>
+        <form class="form">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Find your perfect domain"
+            required
+          />
+          <button type="submit" class="btn-dark">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="cards">
+        <div>
+          <h4>.no</h4>
+          <small>99, -kr</small>
+          <p>Renewal for DKK 189</p>
+        </div>
+        <div>
+          <h4>.com</h4>
+          <small>99, -kr</small>
+          <p>Renewal for DKK 169</p>
+        </div>
+        <div>
+          <p class="tag">Free with hosting</p>
+          <h4>.online</h4>
+          <small>0, -kr</small>
+          <p>Renewal for DKK 449</p>
+        </div>
+        <div>
+          <p class="tag">Free with hosting</p>
+          <h4>.big</h4>
+          <small>0, -kr</small>
+          <p>Renewal for DKK 509</p>
+        </div>
+        <div>
+          <h4>.eu</h4>
+          <small>99, -kr</small>
+          <p>Renewal for DKK 149</p>
+        </div>
+        <div>
+          <p class="tag">Free with hosting</p>
+          <h4>.one</h4>
+          <small>0, -kr</small>
+          <p>Renewal for DKK 119</p>
+        </div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
