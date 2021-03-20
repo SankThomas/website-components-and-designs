@@ -1,0 +1,195 @@
+:root {
+  --primary-color: #111827;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-dark,
+.action {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px hsla(221, 39%, 11%, 0.15);
+  border: 2px solid var(--primary-color);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-dark:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.btn-light {
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px hsla(221, 39%, 11%, 0.15);
+  border: 2px solid #fff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-light:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: 2px solid #f1f1f1;
+}
+
+button,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header ul li {
+  margin: 0 10px;
+}
+
+.header ul li.action {
+  cursor: pointer;
+}
+
+.header ul li.action a {
+  color: #fff;
+}
+
+.header ul li a {
+  font-size: 14px;
+}
+
+.header .menu-grid {
+  opacity: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  background-color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  transition: all 0.4s ease-in-out;
+}
+
+.header .menu-grid.open {
+  opacity: 1;
+  height: 200px;
+}
+
+.header .menu-grid div h4 {
+  margin-bottom: 10px;
+}
+
+.header .menu-grid div p {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.showcase {
+  background: url("./hero.jpeg") no-repeat center/cover;
+  height: 70vh;
+}
+
+.showcase .overlay {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding-left: 150px;
+  justify-content: center;
+}
+
+.showcase .overlay h1 {
+  font-size: 46px;
+}
+
+.showcase .overlay p {
+  font-size: 17px;
+  margin: 10px 0 20px;
+}
+
+.showcase .overlay .form input {
+  padding: 11px;
+  border: 2px solid #fff;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 5px 5px hsla(221, 39%, 11%, 0.15);
+  font-size: 12px;
+}
+
+.showcase .overlay .form button {
+  margin-left: -6px;
+  border-radius: 0;
+}
+
+.grid .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid .cards div {
+  background-color: #fff;
+  position: relative;
+  padding: 20px 40px;
+  transition: all 0.4s ease-in-out;
+}
+
+.grid .cards div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 5px hsla(221, 39%, 11%, 0.25);
+  margin-top: -20px;
+}
+
+.grid .cards div h4 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.grid .cards div small {
+  color: #999;
+  font-size: 12px;
+}
+
+.grid .cards div p {
+  font-size: 14px;
+}
+
+.grid .cards div p.tag {
+  position: absolute;
+  top: 10px;
+  background-color: #f1f1f1;
+  padding: 3px 5px;
+  font-size: 12px;
+  border-radius: 2px;
+}
