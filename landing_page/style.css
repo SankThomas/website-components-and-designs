@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111827;
+  padding: 20px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header ul li {
+  margin: 0 10px;
+}
+
+.header ul > li:last-child {
+  background-color: brown;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid brown;
+  transition: all 0.2s ease-in-out;
+}
+
+.header ul > li:last-child:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: brown;
+}
+
+.showcase {
+  background: url("./hero.jpg") no-repeat top/cover;
+  height: 100vh;
+}
+
+.showcase .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  height: 100vh;
+  padding: 30px;
+  text-align: center;
+}
+
+.showcase .overlay h1 {
+  margin-bottom: 10px;
+}
+
+.showcase .overlay p {
+  margin-bottom: 20px;
+}
+
+.showcase .overlay form input {
+  padding: 10px;
+  border-radius: 3px 0 0 3px;
+  border: 0;
+}
+
+.showcase .overlay form button {
+  background-color: brown;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  border-radius: 0 3px 3px 0;
+  margin-left: -4px;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer ul li {
+  color: #fff;
+  margin: 0 10px;
+}
+
+@media (min-width: 1024px) {
+  .header ul {
+    justify-content: initial;
+  }
+
+  .showcase .overlay {
+    width: 50%;
+    padding-left: 100px;
+    text-align: initial;
+  }
+
+  .showcase .overlay h1 {
+    font-size: 46px;
+  }
+
+  .showcase .overlay p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .showcase .overlay h1 {
+    font-size: 64px;
+  }
+
+  .showcase .overlay form input {
+    width: 50%;
+    font-size: 15px;
+  }
+
+  .showcase .overlay form button {
+    padding: 10px 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
